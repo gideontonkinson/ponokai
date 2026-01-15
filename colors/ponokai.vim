@@ -185,6 +185,8 @@ if has('nvim')
     call ponokai#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.diff_blue, 'undercurl', s:palette.blue)
     call ponokai#highlight('DiagnosticHint', s:palette.green, s:palette.diff_green)
     call ponokai#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.diff_green, 'undercurl', s:palette.green)
+    call ponokai#highlight('DiagnosticOk', s:palette.purple, s:palette.diff_purple)
+    call ponokai#highlight('DiagnosticUnderlineOk', s:palette.none, s:palette.diff_purple, 'undercurl', s:palette.purple)
   else
     call ponokai#highlight('DiagnosticError', s:palette.red, s:palette.none)
     call ponokai#highlight('DiagnosticUnderlineError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
@@ -194,7 +196,8 @@ if has('nvim')
     call ponokai#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
     call ponokai#highlight('DiagnosticHint', s:palette.green, s:palette.none)
     call ponokai#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
-  endif
+    call ponokai#highlight('DiagnosticOk', s:palette.purple, s:palette.none)
+    call ponokai#highlight('DiagnosticUnderlineOk', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat
@@ -266,6 +269,8 @@ call ponokai#highlight('Repeat', s:palette.red, s:palette.none)
 call ponokai#highlight('Statement', s:palette.red, s:palette.none)
 call ponokai#highlight('Macro', s:palette.purple, s:palette.none)
 call ponokai#highlight('Error', s:palette.red, s:palette.none)
+call ponokai#highlight('Added', s:palette.green, s:palette.none)
+call ponokai#highlight('Changed', s:palette.blue, s:palette.none)
 call ponokai#highlight('Label', s:palette.purple, s:palette.none)
 call ponokai#highlight('Special', s:palette.purple, s:palette.none)
 call ponokai#highlight('SpecialChar', s:palette.purple, s:palette.none)
