@@ -33,8 +33,8 @@ endfunction "}}}
 function! ponokai#get_palette(style, colors_override) "{{{
   if a:style ==# 'default'
     let palette = {
-          \ 'black':      ['#181a1c',   '232'],
-          \ 'bg_dim':     ['#252630',   '232'],
+          \ 'black':      ['#000000',   '232'],
+          \ 'bg_dim':     ['#222222',   '232'],
           \ 'bg0':        ['#000000',   '16'],
           \ 'bg1':        ['#1c1c1c',   '234'],
           \ 'bg2':        ['#303030',   '236'],
